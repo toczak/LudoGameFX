@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+   <children>
+      <ToggleButton fx:id="startButton" layoutX="650.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#handleStartButton" prefHeight="31.0" prefWidth="141.0" text="START" />
+      <Pane fx:id="boardImage" prefHeight="620.0" prefWidth="620.0" />
+      <Pane fx:id="boardPane" prefHeight="620.0" prefWidth="620.0" />
+      <Button fx:id="buttonDice" layoutX="681.0" layoutY="118.0" mnemonicParsing="false" onAction="#throwDice" text="Rzuć kostką" />
+      <Label fx:id="labelNick" layoutX="672.0" layoutY="14.0" />
+      <Label fx:id="labelColor" layoutX="672.0" layoutY="30.0" />
+
+      <Label fx:id="labelMove" layoutX="676.0" layoutY="84.0" text="Twój ruch!">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="labelDice" layoutX="687.0" layoutY="153.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonPause" layoutX="650.0" layoutY="424.0" mnemonicParsing="false" onAction="#clickPause" prefHeight="26.0" prefWidth="142.0" text="PAUZA" />
+      <Label fx:id="labelPlayer" layoutX="673.0" layoutY="203.0" text="Label" />
+   </children>
+</AnchorPane>
